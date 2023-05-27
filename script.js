@@ -85,7 +85,7 @@ console.log(weatherData)
 
 // Function to get weather data for a country
 function getWeatherData(country) {
-    const apiKey = '780b7a8eb5ef7a726a9306c61bba5444';
+    const apiKey = process.env.API_KEY;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${country.capital},${country.alpha2Code}&appid=${apiKey}`;
 
     fetch(apiUrl)
