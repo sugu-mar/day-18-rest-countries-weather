@@ -78,7 +78,6 @@ function renderWeatherData(weatherData,id) {
     <p>longitude: ${lon}</p>    
     <p>latitude: ${lat}</p>
   `;
-console.log(weatherData)
    const card = document.getElementById(id);
   card.appendChild(weatherInfoContainer);  
 }
